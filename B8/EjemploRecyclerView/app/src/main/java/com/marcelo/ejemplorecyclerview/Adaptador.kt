@@ -25,7 +25,7 @@ class Adaptador (val datos: ArrayList<Usuario>,var contexto: Context) :
 
         itemView.setOnClickListener(this)
         itemView.setOnLongClickListener(this)
-        return Holder(itemView)
+        return holder
     }
     fun pasarCadena(pasarCadenaInterface: PasarCadenaInterface) {
         this.pasarCadenaInterface = pasarCadenaInterface
