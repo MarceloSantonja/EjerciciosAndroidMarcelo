@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentLista">
+    <fragment
+        android:id="@+id/fragmentLista"
+        android:name="com.marcelo.pruebapajaros.FragmentLista"
+        android:label="FragmentLista" >
+        <action
+            android:id="@+id/action_fragmentLista_to_dialogoEliminar"
+            app:destination="@id/dialogoEliminar" />
+        <action
+            android:id="@+id/action_fragmentLista_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogoEliminar"
+        android:name="com.marcelo.pruebapajaros.DialogoEliminar"
+        android:label="DialogoEliminar" />
+    <fragment
+        android:id="@+id/fragmentDetalle"
+        android:name="com.marcelo.pruebapajaros.FragmentDetalle"
+        android:label="FragmentDetalle" />
+</navigation>
