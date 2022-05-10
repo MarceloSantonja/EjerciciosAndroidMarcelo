@@ -33,6 +33,7 @@ class FragmentDetalle : Fragment() {
             (vistaRaiz.findViewById<TextView>(R.id.textView_inferior)).text = elemento?.descripcion
             (vistaRaiz.findViewById<ImageView>(R.id.imageView_imagen)).setImageResource(elemento!!.idImagen)
         }
+        val a = "hola"
         return vistaRaiz
     }
 
