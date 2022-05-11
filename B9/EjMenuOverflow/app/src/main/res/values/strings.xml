@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EjMenuOverflow</string>
+    <string name="item1">item 1</string>
+    <string name="item2">item 2</string>
+    <string name="item3">item 3</string>
+    <string name="subIitem2">subItem 2</string>
+    <string name="button1">Button</string>
+    <string name="opSms">SMS</string>
+    <string name="opMail">Mail</string>
+    <string name="context_menu_text">Context Menu Text</string>
+    <string name="context_menu_button">Context Menu Button</string>
+    <string name="pop_menu_button">Pop Menu Button</string>
+</resources>
