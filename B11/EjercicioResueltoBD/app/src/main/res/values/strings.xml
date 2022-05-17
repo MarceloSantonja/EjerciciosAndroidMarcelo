@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EjercicioResueltoBD</string>
+    <string name="a_adir">Añadir</string>
+    <string name="apellidos">apellidos</string>
+    <string name="nombre">nombre</string>
+    <string name="mostrar">Mostrar</string>
+</resources>
