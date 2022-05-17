@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val from = arrayOf("nombre", "cate")
-        val to = intArrayOf(R.id.ciclo, R.id.cate)
+        val to = intArrayOf( R.id.ciclo, R.id.cate)
         setContentView(R.layout.activity_main)
         val dbAdapter=DBAdapter(this)
         dbAdapter.insertarDatosCodigo()
@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         val cursor=dbAdapter.leerDatos()
         val mAdapter = SimpleCursorAdapter(this, R.layout.spinner_layout,
             cursor, from, to, 0x0)
-
 
         desplegable.setAdapter(mAdapter)
 
