@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.marcelo.b7agenda"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:6:5-65
+11-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:6:22-62
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:7:22-77
+13
+14    <application
+14-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:8:5-27:19
+15        android:allowBackup="true"
+15-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] C:\Users\marce\.gradle\caches\transforms-3\4825226d7bdc18dc642f18a8a048b277\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:10:9-65
+18        android:debuggable="true"
+19        android:fullBackupContent="@xml/backup_rules"
+19-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:11:9-54
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:15:9-35
+24        android:theme="@style/Theme.B7Agenda" >
+24-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:16:9-46
+25        <activity
+25-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:18:9-26:20
+26            android:name="com.marcelo.b7agenda.MainActivity"
+26-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:19:13-41
+27            android:exported="true" >
+27-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:20:13-36
+28            <intent-filter>
+28-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:21:13-25:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:22:17-69
+29-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:22:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:24:17-77
+31-->C:\Users\marce\Desktop\EjerciciosAndroidMarcelo\B8\B8Agenda\app\src\main\AndroidManifest.xml:24:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <uses-library
+35-->[androidx.window:window:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+36            android:name="androidx.window.extensions"
+36-->[androidx.window:window:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+37            android:required="false" />
+37-->[androidx.window:window:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+38        <uses-library
+38-->[androidx.window:window:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+39            android:name="androidx.window.sidecar"
+39-->[androidx.window:window:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+40            android:required="false" />
+40-->[androidx.window:window:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+41
+42        <provider
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+43            android:name="androidx.startup.InitializationProvider"
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+44            android:authorities="com.marcelo.b7agenda.androidx-startup"
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+45            android:exported="false" >
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+46            <meta-data
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+48                android:value="androidx.startup" />
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\marce\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+49            <meta-data
+49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\marce\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+50                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\marce\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+51                android:value="androidx.startup" />
+51-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\marce\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+52        </provider>
+53    </application>
+54
+55</manifest>

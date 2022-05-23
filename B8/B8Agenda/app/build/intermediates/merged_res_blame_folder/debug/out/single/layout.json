@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/recycler_layout_main.xml",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/recycler_layout_main.xml"
+    },
+    {
+        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/layout_add_new_contact.xml",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/layout_add_new_contact.xml"
+    },
+    {
+        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/layout_edit_contact.xml",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/layout_edit_contact.xml"
+    },
+    {
+        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/recycler_cardview.xml",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/recycler_cardview.xml"
+    }
+]
