@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">examen25112020</string>
+    <string name="informe">Informe</string>
+    <string name="boton_flotante_recyclerview">boton flotante recyclerView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trabaja">Trabaja</string>
+    <string name="no_trabaja">No trabaja</string>
+    <string name="avisar_a_los_padres">Avisar a los padres</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+</resources>

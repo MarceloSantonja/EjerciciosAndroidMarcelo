@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExamenCumpleanyos</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cumple">CUMPLE</string>
+    <string name="etapas">ETAPAS</string>
+    <string name="globos">Globos</string>
+    <string name="felicidades">Felicidades</string>
+    <string name="tarta">Tarta</string>
+    <string name="fecha_cumple">Fecha Cumple</string>
+    <string name="etapas_de_loli">ETAPAS DE LOLI</string>
+    <string name="juego_libre_30_minutos">Juego Libre 30 minutos</string>
+    <string name="teatro_y_animaciones_40_minutos">Teatro y animaciones 40 minutos</string>
+    <string name="merienda_30minutos">Merienda 30minutos</string>
+    <string name="regalos_20minutos">Regalos 20minutos</string>
+</resources>

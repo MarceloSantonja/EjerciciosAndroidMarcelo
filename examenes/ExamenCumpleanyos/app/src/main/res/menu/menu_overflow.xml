@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/itemGlovos"
+        android:title="@string/globos"
+        />
+    <item
+        android:id="@+id/itemTarta"
+        android:title="@string/tarta" />
+    <item
+        android:id="@+id/itemFelicidades"
+        android:title="@string/felicidades"
+        />
+</menu>

@@ -56,6 +56,10 @@
         "source": "com.marcelo.b7agenda.app-main-39:/drawable-v24/ic_baseline_person_100.xml"
     },
     {
+        "merged": "com.marcelo.b7agenda.app-merged_res-37:/layout_fragment_recycler_layout.xml.flat",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/fragment_recycler_layout.xml"
+    },
+    {
         "merged": "com.marcelo.b7agenda.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "com.marcelo.b7agenda.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
     },
@@ -86,10 +90,6 @@
     {
         "merged": "com.marcelo.b7agenda.app-merged_res-37:/drawable_ic_launcher_background.xml.flat",
         "source": "com.marcelo.b7agenda.app-main-39:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.marcelo.b7agenda.app-merged_res-37:/layout_recycler_layout_main.xml.flat",
-        "source": "com.marcelo.b7agenda.app-main-39:/layout/recycler_layout_main.xml"
     },
     {
         "merged": "com.marcelo.b7agenda.app-merged_res-37:/xml_backup_rules.xml.flat",

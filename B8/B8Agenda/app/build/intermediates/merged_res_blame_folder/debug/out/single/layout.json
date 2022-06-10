@@ -4,8 +4,8 @@
         "source": "com.marcelo.b7agenda.app-main-39:/layout/activity_main.xml"
     },
     {
-        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/recycler_layout_main.xml",
-        "source": "com.marcelo.b7agenda.app-main-39:/layout/recycler_layout_main.xml"
+        "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/fragment_recycler_layout.xml",
+        "source": "com.marcelo.b7agenda.app-main-39:/layout/fragment_recycler_layout.xml"
     },
     {
         "merged": "com.marcelo.b7agenda.app-mergeDebugResources-36:/layout/layout_add_new_contact.xml",

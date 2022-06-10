@@ -19,9 +19,7 @@ class recyclerLayout : Fragment() {
     ): View? {
         binding= FragmentRecyclerLayoutBinding.inflate(inflater,container,false)
 
-
         return binding.root
-
     }
 
 }

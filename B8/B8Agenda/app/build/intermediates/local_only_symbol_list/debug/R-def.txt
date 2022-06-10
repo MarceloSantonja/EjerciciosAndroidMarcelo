@@ -42,15 +42,16 @@ id numeroTlfTextView
 id okFab
 id phoneText
 id phone_text_input_layout
+id recyclerLayout
 id recyclerList
 id tlfText
 id viewA
 id vistaArriba
 layout activity_main
+layout fragment_recycler_layout
 layout layout_add_new_contact
 layout layout_edit_contact
 layout recycler_cardview
-layout recycler_layout_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navegacion

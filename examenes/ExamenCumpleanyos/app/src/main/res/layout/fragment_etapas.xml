@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentEtapas">
+
+    <TextView
+        android:id="@+id/textViewTituloEtapas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/etapas_de_loli"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewJuego"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/juego_libre_30_minutos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewTeatro"
+        app:layout_constraintEnd_toStartOf="@id/textViewMerienda"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/textViewTeatro"
+        app:layout_constraintTop_toBottomOf="@id/textViewTituloEtapas" />
+
+    <TextView
+        android:id="@+id/textViewTeatro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/teatro_y_animaciones_40_minutos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewRegalos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewJuego" />
+
+    <TextView
+        android:id="@+id/textViewMerienda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/merienda_30minutos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewTeatro"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRegalos"
+        app:layout_constraintStart_toEndOf="@id/textViewJuego"
+        app:layout_constraintTop_toBottomOf="@id/textViewTituloEtapas" />
+
+    <TextView
+        android:id="@+id/textViewRegalos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="@string/regalos_20minutos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewTeatro"
+        app:layout_constraintTop_toBottomOf="@id/textViewMerienda" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.marcelo.b7agenda
 
+import android.content.Context
 import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -18,24 +19,71 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-companion object{
+    companion object {
 
 
-    fun listaContactos() {
+        fun listaContactos(context: Context) {
 
-        var listaContactos = MutableList<Contacto>{
-            Contacto(
-                0,
-                "Adrian",
-                "Gonzalez Jordan",
-                "665200454",
-                "adrian@hotmail.com",
-                Bitmap.createBitmap(R.drawable.user_customer_person_face_add)
-            )
+            var listaContactos = arrayListOf<Contacto>(
+                Contacto(
+                    0,
+                    "Adrian",
+                    "Gonzalez Jordan",
+                    "665200454",
+                    "adrian@hotmail.com",
+                    BitmapFactory.decodeResource(
+                        context.resources,
+                        R.drawable.user_customer_person_face_add,
+                        null
+                    )
+                ),Contacto(
+                    1,
+                    "Alberto",
+                    "Gonzalez Jordan",
+                    "665200454",
+                    "adrian@hotmail.com",
+                    BitmapFactory.decodeResource(
+                        context.resources,
+                        R.drawable.user_customer_person_face_add,
+                        null
+                    )
+                ),Contacto(
+                    2,
+                    "Alejandro",
+                    "Gonzalez Jordan",
+                    "665200454",
+                    "adrian@hotmail.com",
+                    BitmapFactory.decodeResource(
+                        context.resources,
+                        R.drawable.user_customer_person_face_add,
+                        null
+                    )
+                ),Contacto(
+                    3,
+                    "Carlos",
+                    "Gonzalez Jordan",
+                    "665200454",
+                    "adrian@hotmail.com",
+                    BitmapFactory.decodeResource(
+                        context.resources,
+                        R.drawable.user_customer_person_face_add,
+                        null
+                    )
+                ),Contacto(
+                    4,
+                    "David",
+                    "Gonzalez Jordan",
+                    "665200454",
+                    "adrian@hotmail.com",
+                    BitmapFactory.decodeResource(
+                        context.resources,
+                        R.drawable.user_customer_person_face_add,
+                        null
+                    ))
+                )
 
         }
     }
 
 }
 
-}
