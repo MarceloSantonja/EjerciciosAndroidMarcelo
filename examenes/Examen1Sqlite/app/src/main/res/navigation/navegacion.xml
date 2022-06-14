@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/fragmentPresentacion">
+
+    <fragment
+        android:id="@+id/fragmentJugar"
+        android:name="com.marcelo.examen1sqlite.FragmentJugar"
+        android:label="fragment_jugar"
+        tools:layout="@layout/fragment_jugar" >
+        <action
+            android:id="@+id/action_fragmentJugar_to_fragmentPresentacion"
+            app:destination="@id/fragmentPresentacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPresentacion"
+        android:name="com.marcelo.examen1sqlite.FragmentPresentacion"
+        android:label="fragment_presentacion"
+        tools:layout="@layout/fragment_presentacion" >
+        <action
+            android:id="@+id/action_fragmentPresentacion_to_fragmentJugar"
+            app:destination="@id/fragmentJugar" />
+    </fragment><action android:id="@+id/action_global_fragmentPresentacion" app:destination="@id/fragmentPresentacion"/>
+</navigation>

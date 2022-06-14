@@ -30,12 +30,12 @@ class BDAdapter(context: Context) {
     fun cursordatos(): Cursor? {
         return cumpleanyos.readableDatabase?.rawQuery("SELECT * FROM cumpleanyos", null)
     }
-    fun iniciar(id: Int){
+    fun valorIniciado(id: Int,nuevoValor:Int){
 
         var dbCumpleanyos = cumpleanyos.writableDatabase
         if (dbCumpleanyos != null) {
             val valores = ContentValues()
-            valores.put("iniciado",1)
+            valores.put("iniciado",nuevoValor)
             dbCumpleanyos.update("cumpleanyos",valores,"ID=$id",null)
             dbCumpleanyos.close()
         }
@@ -46,7 +46,6 @@ class BDAdapter(context: Context) {
             var cursor = cumpleanyos.readableDatabase?.rawQuery("SELECT * FROM cumpleanyos WHERE iniciado LIKE '1'", null)
             if (cursor != null)
                 return getCumples(cursor)
-
         }
         return null
     }

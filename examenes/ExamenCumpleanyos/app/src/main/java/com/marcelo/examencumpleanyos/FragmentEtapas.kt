@@ -1,17 +1,12 @@
 package com.marcelo.examencumpleanyos
 
-import android.app.Dialog
-import android.os.Build.VERSION_CODES.M
 import android.os.Bundle
-import android.system.Os.accept
-import android.system.Os.bind
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import com.marcelo.examencumpleanyos.databinding.FragmentEtapasBinding
-import kotlinx.coroutines.NonCancellable.cancel
 import java.util.*
 
 class FragmentEtapas : Fragment() {
@@ -20,7 +15,8 @@ class FragmentEtapas : Fragment() {
 
     lateinit var nombreEtapaSeleccionada: String
     lateinit var etapaActual: String
-    lateinit var  bdAdapter : BDAdapter
+    lateinit var bdAdapter: BDAdapter
+    private var cumpleActivo: Cumple? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,16 +24,30 @@ class FragmentEtapas : Fragment() {
         _binding = FragmentEtapasBinding.inflate(inflater, container, false)
         etapaActual = ""
         bdAdapter = BDAdapter(binding.root.context)
-
-        binding.textViewTituloEtapas.setText("Nombre nuevo")
-
+        //TODO duda asignar cumpleañero en la vista
+        asignarCupleanyero()
 
         registerForContextMenu(binding.textViewJuego)
         registerForContextMenu(binding.textViewMerienda)
         registerForContextMenu(binding.textViewTeatro)
         registerForContextMenu(binding.textViewRegalos)
-
+        binding.fabEliminarCumple.setOnClickListener {
+            if (cumpleActivo != null){
+                bdAdapter.borrar(cumpleActivo!!.id)
+                Toast.makeText(binding.root.context,"cumple de ${cumpleActivo!!.nombre} borrado de la BD",Toast.LENGTH_LONG)
+            }
+        }
         return binding.root
+    }
+
+    private fun asignarCupleanyero() {
+        var cumplesIniciados = bdAdapter.buscarCumplesIniciados()
+        var nombreCumpleanyero = "Nombre cumpleanyero"
+        if (cumplesIniciados != null) {
+            cumpleActivo = cumplesIniciados[0]
+            nombreCumpleanyero = cumpleActivo!!.nombre
+        }
+        binding.textViewTituloEtapas.text = "Etapas de$nombreCumpleanyero"
     }
 
     override fun onCreateContextMenu(
@@ -63,7 +73,7 @@ class FragmentEtapas : Fragment() {
     override fun onContextItemSelected(item: MenuItem): Boolean {
         var hoy = Calendar.getInstance()
         var hora = hoy.get(Calendar.HOUR)
-        var minutos= hoy.get(Calendar.MINUTE)
+        var minutos = hoy.get(Calendar.MINUTE)
 
         var texto = "$nombreEtapaSeleccionada\n" +
                 "Comenzo a : $hora:$minutos"

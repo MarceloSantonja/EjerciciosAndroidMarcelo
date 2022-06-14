@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/paisajes" android:title="@string/paisajes"/>
+<item android:id="@+id/animales" android:title="@string/animales"/>
+<item android:id="@+id/pinturas" android:title="@string/pinturas"/>
+</menu>

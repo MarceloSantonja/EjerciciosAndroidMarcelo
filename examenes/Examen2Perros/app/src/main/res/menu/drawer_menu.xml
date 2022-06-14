@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_todos"
+
+            android:title="Todos" />
+
+    </group>
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Canarios"
+            android:icon="@drawable/pajaro"
+            android:title="Canarios" />        <item
+            android:id="@+id/nav_Gatos"
+            android:icon="@drawable/gato"
+            android:title="Canarios" />        <item
+            android:id="@+id/nav_perros"
+            android:icon="@drawable/perro"
+            android:title="Canarios" />
+    </group>
+    <item
+        android:id="@+id/nav_Subir"
+        android:icon="@drawable/subir"
+        android:title="SUBIR" />
+
+
+</menu>

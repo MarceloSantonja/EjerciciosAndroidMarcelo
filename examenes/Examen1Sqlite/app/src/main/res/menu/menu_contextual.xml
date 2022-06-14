@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemPrimeraPista"
+        android:title="@string/pista_primera" />
+    <item
+        android:id="@+id/itemSegundaPista"
+        android:title="@string/pista_segunda" />
+    <item
+        android:id="@+id/itemTerceraPista"
+        android:title="@string/pista_tercera" />
+</menu>

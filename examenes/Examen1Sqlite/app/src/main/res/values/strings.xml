@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Examen1Sqlite</string>
+    <string name="paisajes">Paisajes</string>
+    <string name="animales">Animales</string>
+    <string name="pinturas">Pinturas</string>
+    <string name="comenzar">Comenzar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pista_tercera">Pista tercera</string>
+    <string name="pista_segunda">Pista segunda</string>
+    <string name="pista_primera">Pista primera</string>
+</resources>

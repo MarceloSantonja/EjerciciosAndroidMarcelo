@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cabecera" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#B5710D"
+        android:layout_gravity="bottom|right"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#09453F"
+            android:text="Asociación Adopta una Mascota"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
