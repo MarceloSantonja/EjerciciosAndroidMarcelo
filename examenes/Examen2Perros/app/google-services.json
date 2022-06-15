@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "589720637557",
+    "project_id": "proyectoexamen01",
+    "storage_bucket": "proyectoexamen01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589720637557:android:f4c68fd504a7220c13a83c",
+        "android_client_info": {
+          "package_name": "com.marcelo.examen2perros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589720637557-3g11gpb120nct0j0e61cpj60ur47hsed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVdsNUoXlZ3q_VsCO_8n3Wd7-OixvajiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589720637557-3g11gpb120nct0j0e61cpj60ur47hsed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

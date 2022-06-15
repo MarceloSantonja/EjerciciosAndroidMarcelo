@@ -5,8 +5,13 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 import com.marcelo.examen2perros.databinding.ActivityMainBinding
@@ -14,19 +19,32 @@ import com.marcelo.examen2perros.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(),
     NavigationView.OnNavigationItemSelectedListener {
     private lateinit var binding: ActivityMainBinding
-    lateinit var drawer_layout: DrawerLayout
     lateinit var toggle: ActionBarDrawerToggle
-    lateinit var toolbar: MaterialToolbar
-    lateinit var navigationView: NavigationView
-    lateinit var  bdAdaptador: BDAdapter
+    val model: ItemViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        navigationView = binding.navigationView
+        crearMenu()
+        cargaDatosSQLite()
+
+
+    }
+
+    private fun cargaDatosSQLite() {
+        val bdAdaptador = SQLiteAdapter(binding.root.context)
+        val listaAnimal = cargaDatos()
+        val numeroFilasEnBD = bdAdaptador.leerDatosCodigo(null)!!.count
+        if (numeroFilasEnBD == 0)
+            bdAdaptador.insertarDatosInicio(listaAnimal)
+    }
+
+    private fun crearMenu() {
+        val navigationView = binding.navigationView
         navigationView.setNavigationItemSelectedListener(this)
-        drawer_layout = binding.drawerLayout
-        toolbar = binding.topAppBar
+        val drawer_layout = binding.drawerLayout
+        val toolbar = binding.topAppBar
         setSupportActionBar(toolbar)
         toggle = ActionBarDrawerToggle(
             this, drawer_layout,
@@ -34,20 +52,38 @@ class MainActivity : AppCompatActivity(),
             R.string.navigation_drawer_close
         )
         drawer_layout.addDrawerListener(toggle)
-
-        bdAdaptador = BDAdapter(binding.root.context)
-        val listaAnimal = cargaDatos()
-        bdAdaptador.insertarDatosInicio(listaAnimal)
-
-
-
-
-
-
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        TODO("Not yet implemented")
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.contenedor) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        when (item.itemId) {
+            R.id.nav_todos -> {
+                navController.navigate(R.id.action_global_recyclerFragment)
+                model.setTipoSeleccionado(null)
+            }
+            R.id.nav_Canarios -> {
+                navController.navigate(R.id.action_global_recyclerFragment)
+                model.setTipoSeleccionado(2)
+
+            }
+            R.id.nav_Gatos -> {
+                navController.navigate(R.id.action_global_recyclerFragment)
+                model.setTipoSeleccionado(1)
+
+            }
+            R.id.nav_perros -> {
+                navController.navigate(R.id.action_global_recyclerFragment)
+                model.setTipoSeleccionado(0)
+
+            }
+            R.id.nav_Subir -> {
+                navController.navigate(R.id.action_global_dialogoPersonalizado)
+            }
+        }
+        return true
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {

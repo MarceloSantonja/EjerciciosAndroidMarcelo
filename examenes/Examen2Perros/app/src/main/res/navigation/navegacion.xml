@@ -9,5 +9,19 @@
         android:id="@+id/recyclerFragment"
         android:name="com.marcelo.examen2perros.RecyclerFragment"
         android:label="fragment_recycler"
-        tools:layout="@layout/fragment_recycler" />
+        tools:layout="@layout/fragment_recycler" >
+        <action
+            android:id="@+id/action_recyclerFragment_to_editarAnimalFragment"
+            app:destination="@id/editarAnimalFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_recyclerFragment" app:destination="@id/recyclerFragment" />
+    <fragment
+        android:id="@+id/editarAnimalFragment"
+        android:name="com.marcelo.examen2perros.EditarAnimalFragment"
+        android:label="EditarAnimalFragment" />
+    <dialog
+        android:id="@+id/dialogoPersonalizado"
+        android:name="com.marcelo.examen2perros.dialogoPersonalizado"
+        android:label="fragment_dialogo_personalizado"
+        tools:layout="@layout/fragment_dialogo_personalizado" /><action android:id="@+id/action_global_dialogoPersonalizado" app:destination="@id/dialogoPersonalizado"/>
 </navigation>
